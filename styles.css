@@ -3,6 +3,12 @@
 	font-size: 25px;
 }
 
-img{
+
+#myImg{
 	border-radius:50%;
+}
+
+.iconImg{
+	height: 30px;
+	width: 30px;;
 }
