@@ -12,3 +12,41 @@
 	height: 30px;
 	width: 30px;;
 }
+
+.grid{
+	display: grid;
+	grid-template: 200px 1600px/1fr 3fr;
+	grid-gap: 20px;
+
+}
+.Header{
+	grid-area: 1/1/2/3;
+	background-color: rgb(95,158,160);
+	display: flex;
+	/*color: ;*/
+	justify-content: center;
+	align-items: center;
+	/*box-sizing: border-box; DO i need these if i dont have heights*/
+	margin: 10px;
+	border: 10px double #000000;
+	padding: 30px;
+	text-align: center;
+}
+
+.mainContent{
+	grid-area: 2/2/3/3;
+	background-color: rgb(95,158,160);
+	margin-right: 50px;
+	/* Bare in mind that there will be a grid gap*/
+	/*box-sizing: border-box; DO i need these if i dont have heights*/
+}
+
+.sidebar{
+	grid-area: 2/1/3/2;
+	background-color: rgb(95,158,160);
+	/* Bare in mind that there will be a grid gap*/
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	padding: 10px;
+}
