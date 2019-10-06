@@ -9,13 +9,17 @@
 }
 
 .iconImg{
-	height: 30px;
-	width: 30px;;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+
 }
 
 .grid{
 	display: grid;
-	grid-template: 200px 1600px/1fr 3fr;
+	grid-template: 200px 1600px/1fr 2fr;
+	/*Research the difference between gird-template and grid-template area*/
+	/* Need to adjust the width of the columns so the sidebar has more space*/
 	grid-gap: 20px;
 
 }
@@ -37,6 +41,7 @@
 	grid-area: 2/2/3/3;
 	background-color: rgb(95,158,160);
 	margin-right: 50px;
+	padding: 20px;
 	/* Bare in mind that there will be a grid gap*/
 	/*box-sizing: border-box; DO i need these if i dont have heights*/
 }
@@ -49,4 +54,16 @@
 	margin-bottom: 20px;
 	margin-left: 50px;
 	padding: 10px;
+}
+
+.flexContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: left;
+	/*Can I set the height of the container so all the flex container are aligned*/
+}
+
+.description{
+	width: 700px;
 }
