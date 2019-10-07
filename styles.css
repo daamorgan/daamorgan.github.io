@@ -1,9 +1,21 @@
 /*Styling for job heading DON'T KNOW IF I NEED IT*/
 #Job{
 	font-size: 25px;
+	text-transform: capitalize;
 }
 
+@font-face{
+	 font-family: "MyWebFont";
+	 src: url(../KaushanScript-Regular.otf);
+}
 
+h1{
+	text-transform: uppercase;
+	font-family: "MyWebFont";
+}
+h2, h3 {
+	font-family: "MyWebFont";
+}
 #myImg{
 	border-radius:50%;
 }
@@ -59,11 +71,25 @@
 .flexContainer{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	text-align: left;
+	justify-content: left;
+	padding: 10px;
+	/* align-content: space-between; do i need this padding*/
 	/*Can I set the height of the container so all the flex container are aligned*/
 }
 
-.description{
-	width: 700px;
+.flexitem{
+	padding: 30px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.italic{
+	font-style: italic;
+}
+
+ul{
+	column-count: 2;
+	line-height: 20pt;
 }
