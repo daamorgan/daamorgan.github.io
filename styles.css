@@ -1,71 +1,97 @@
-/*Styling for job heading DON'T KNOW IF I NEED IT*/
+
+
+@font-face{
+	 font-family: "MyWebFont";
+	 src: url(./KaushanScript-Regular.otf);
+}
+
+
+h1, h2, h3 {
+	font-family: "MyWebFont", cursive;
+	padding: 10px;
+}
+
+hr{
+	width: 500px;
+}
+
+.grid{
+	display: grid;
+	grid-template: 250px 1400px/1fr 2fr;
+	grid-gap: 20px;
+}
+
+/* Header*/
+
+.Header{
+	grid-area: 1/1/2/3;
+	background-color: #5f9ea0;
+	color: #DDA77B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 30px;
+	text-align: center;
+}
+.Border{
+	border-top-style: outset;
+	border-right-style: inset;
+    border-bottom-style: inset;
+  	border-left-style: outset;
+	border-color: #DDA77B;
+	border-width: 5px;
+	padding: 10px;
+}
+
 #Job{
 	font-size: 25px;
 	text-transform: capitalize;
 }
 
-@font-face{
-	 font-family: "MyWebFont";
-	 src: url(../KaushanScript-Regular.otf);
+/*Sidebar*/
+
+.sidebar{
+	grid-area: 2/1/3/2;
+	background-color: #5f9ea0;
+	margin-right: 10px;
+	margin-left: 40px;
+	padding: 30px;
 }
 
-h1{
-	text-transform: uppercase;
-	font-family: "MyWebFont";
-}
-h2, h3 {
-	font-family: "MyWebFont";
-}
 #myImg{
 	border-radius:50%;
+	padding: 6px;
+	border:5px dotted white;
+	align-items: center;
 }
 
 .iconImg{
 	height: 50px;
 	width: 50px;
 	vertical-align: middle;
-
 }
 
-.grid{
-	display: grid;
-	grid-template: 200px 1600px/1fr 2fr;
-	/*Research the difference between gird-template and grid-template area*/
-	/* Need to adjust the width of the columns so the sidebar has more space*/
-	grid-gap: 20px;
+#sidebarSpacer{
+	width:300px;
+}
 
-}
-.Header{
-	grid-area: 1/1/2/3;
-	background-color: rgb(95,158,160);
-	display: flex;
-	/*color: ;*/
-	justify-content: center;
-	align-items: center;
-	/*box-sizing: border-box; DO i need these if i dont have heights*/
-	margin: 10px;
-	border: 10px double #000000;
-	padding: 30px;
-	text-align: center;
-}
+
+
+/* Main Content #5f9ea0*/
 
 .mainContent{
 	grid-area: 2/2/3/3;
-	background-color: rgb(95,158,160);
 	margin-right: 50px;
-	padding: 20px;
-	/* Bare in mind that there will be a grid gap*/
-	/*box-sizing: border-box; DO i need these if i dont have heights*/
+	padding-top:20px;
+	padding-left: 20px;
+	padding-right: 20px; 
+	background-color: #5f9ea0;
 }
 
-.sidebar{
-	grid-area: 2/1/3/2;
-	background-color: rgb(95,158,160);
-	/* Bare in mind that there will be a grid gap*/
-	margin-right: 10px;
-	margin-bottom: 20px;
-	margin-left: 50px;
-	padding: 10px;
+.indent{
+	padding:50;
+
 }
 
 .flexContainer{
@@ -73,14 +99,20 @@ h2, h3 {
 	flex-direction: row;
 	justify-content: left;
 	padding: 10px;
-	/* align-content: space-between; do i need this padding*/
-	/*Can I set the height of the container so all the flex container are aligned*/
 }
 
 .flexitem{
-	padding: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
+.space{
+	width:500px;
+}
+
+.date{
+	width:100px;
+}
 .bold{
 	font-weight: bold;
 }
@@ -92,4 +124,5 @@ h2, h3 {
 ul{
 	column-count: 2;
 	line-height: 20pt;
+	list-style: square; 
 }
