@@ -9,11 +9,18 @@ h1, h2{
 	padding: 10px;
 }
 
+h3{
+	font-size:1.10em;
+	font-weight: bold;
+	padding-top: 9px;
+}
+
 hr{
 	border: 3px solid white;
 	width: 100%;
 }
 
+/*Set the layout for the resume*/
 .grid{
 	display: grid;
 	grid-template: 250px 1400px/1fr 2fr;
@@ -105,25 +112,19 @@ hr{
 	width:500px;
 }
 
-/* Reduces the spacing between the job title and place of employment*/
-
+/* Format the date*/
 .date{
 	width:120px;
 	font-size:1.10em;
 	font-weight: bold;
 } 
 
-h3{
-	font-size:1.10em;
-	font-weight: bold;
-	padding-top: 9px;
-
-}
-
+/* Reduces the line spacing between the work experiences and degrees details*/
 .lineSpacing{
 	line-height: 0.3;
 }
 
+/*italicize fonts*/
 .italic{
 	padding-top: 10px;
 	font-style: italic;
@@ -135,9 +136,8 @@ ul{
     -moz-column-gap: 2.5em;
     -webkit-column-count: 2;
     -webkit-column-gap: 2.5em;
-     column-count: 2;
-     column-gap: 2.5em;
-	column-count: 2;
+    column-count: 2;
+    column-gap: 2.5em;
 	line-height: 20pt;
 	list-style: square; 
 }
